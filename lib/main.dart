@@ -1,23 +1,21 @@
+import '/pages/login_page.dart';
 import 'package:flutter/material.dart';
 
-import 'pages/login_page.dart';
-
-// Main function Entry for flutter
-void main(){
+void main() {
   runApp(MyApp());
 }
 
-// Root widget
+//Root Widget
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner:false,
+      debugShowCheckedModeBanner: false,
 
       theme: ThemeData(
-        primaryColor: Colors.pink,
+        primaryColor: Colors.indigo,
       ),
-      home:LoginPage()
+      home: LoginPage(),
     );
   }
 }
